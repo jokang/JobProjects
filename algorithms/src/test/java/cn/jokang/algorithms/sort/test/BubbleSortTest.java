@@ -10,4 +10,12 @@ public class BubbleSortTest extends BasicSortTest {
         bubbleSort.bubbleSort(array);
         print(array);
     }
+
+    @Test
+    public void testSpecialInput() {
+        BubbleSort bubbleSort = new BubbleSort();
+        bubbleSort.bubbleSort(nullArray);
+        bubbleSort.bubbleSort(emptyArray);
+        bubbleSort.bubbleSort(oneElementArray);
+    }
 }
